@@ -1,9 +1,9 @@
 import os.path
-import csv
+import json
 
 
-def loadcsvfile(filepath):
+def loadjsonfile(filepath):
     with open(filepath) as file:
-        content = csv.reader(filepath)
+        content = json.loadfile(filepath)
     file.close()
     return filepath.name, content
