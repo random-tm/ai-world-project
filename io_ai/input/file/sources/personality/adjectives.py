@@ -1,5 +1,5 @@
-import get_word
+import select_word
 
 
-def get_adjective():
-    return get_word("adjectives.csv")
+def get_adjective(chance):
+    return select_word("adjectives.csv", chance)
