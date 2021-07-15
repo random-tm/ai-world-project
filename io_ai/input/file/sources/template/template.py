@@ -12,4 +12,4 @@ def load_template(template_path):
         if re.search("%", line):
             matcher = line.split("%")[1]
             words_needed.append(matcher)
-    return [text, words_needed]
+    return text, words_needed
