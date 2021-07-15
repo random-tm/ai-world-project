@@ -1,3 +1,4 @@
+import random
 import load_csv_file
 
 
@@ -14,7 +15,7 @@ def load_word(file_path):
 
 def select_word(file_path, max_chance):
     words = load_word(file_path)
-    words.shuffle()
+    random.shuffle(words)
     for word in words:
         chance = words[word]
         if chance <= max_chance:
