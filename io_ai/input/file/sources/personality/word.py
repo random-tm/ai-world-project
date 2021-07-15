@@ -13,6 +13,7 @@ def load_word(file_path):
     return words
 
 
+# Select a random word from the available list
 def select_word(file_path, max_chance):
     words = load_word(file_path)
     random.shuffle(words)

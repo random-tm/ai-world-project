@@ -1,5 +1,6 @@
 import select_word
 
 
+# Get random adverb
 def get_adverbs(chance):
-    return load_word("adverbs.csv", chance)
+    return select_word("adverbs.csv", chance)
