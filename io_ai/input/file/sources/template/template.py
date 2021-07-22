@@ -1,4 +1,4 @@
-import load_text_file
+import txt
 import re
 
 
