@@ -1,4 +1,14 @@
+from abc import ABC, abstractmethod
+
+
 class Demeanor:
+
+    # These are abstract
+    aggressive_trait = 1
+    fear_trait = 1
+    integrity_trait = 1
+    intelligence_trait = 1
+
     def __init__(self):
         self.__generate_persona_variance()
 
@@ -6,17 +16,21 @@ class Demeanor:
         return "Implement word"
         #TODO Hook up file load code
 
+    @abstractmethod
+    def generate_trait(self, value):
+        return 1
+
     def __generate_aggressiveness(self):
-        return generate_trait(self.aggressive_trait)
+        return self.generate_trait(self.aggressive_trait)
 
     def __generate_fear(self):
-        return generate_trait(self.fear_trait)
+        return self.generate_trait(self.fear_trait)
 
     def __generate_integrity(self):
-        return generate_trait(self.integrity_trait)
+        return self.generate_trait(self.integrity_trait)
 
     def __generate_intelligence(self):
-        return generate_trait(self.intelligence_trait)
+        return self.generate_trait(self.intelligence_trait)
 
     def __generate_persona_variance(self):
         self.aggressive_calc = self.__generate_aggressiveness()

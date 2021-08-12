@@ -9,9 +9,9 @@ print("Total arguments passed: ", n)
 # Arguments Passed
 print("\nName of Python script: ", sys.argv[0])
 
-print("\nArguments passed: ", end = " ")
+print("\nArguments passed: ", end=" ")
 for i in range(1,n):
-    print(sys.argv[i], end = " ")
+    print(sys.argv[i], end=" ")
 
 # List of command line arguments
 argument_List = sys.argv[1:]
