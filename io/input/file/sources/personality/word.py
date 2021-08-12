@@ -1,5 +1,5 @@
 import random
-import load_csv_file
+from io.input.file.loader.csv import load_csv_file
 
 
 # Return word structure

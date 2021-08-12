@@ -1,4 +1,4 @@
-import load_text_file
+from io.input.file.loader.txt import load_text_file
 import re
 
 

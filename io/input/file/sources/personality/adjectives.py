@@ -1,4 +1,4 @@
-import select_word
+from io.input.file.sources.personality.word import select_word
 
 
 # Get random adjective
